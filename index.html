@@ -4,41 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
     <title>AI Brand Name & Tagline Generator</title>
   </head>
   <body>
-    <header>
-      <h1>AI Brand Name & Tagline Generator</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter your idea..."
-          required
-          autofocus
-          autocomplete="off"
-        />
-        <input type="submit" value="Submit" />
-      </form>
-      <div>
-        Brand Name
+    <div class="container">
+      <header>
+        <p class="ai-generated-icon">✨ AI-powered brand naming</p>
+        <h1>
+          Find the
+          <span class="perfect-name">perfect name</span> for your brand.
+        </h1>
+        <h6>
+          Describe your idea and we will generate unique and memorable brand
+          names with complete taglines and rationale blurbs.
+        </h6>
+      </header>
+      <main>
+        <form>
+          <div class="form-description">Describe your business</div>
+          <input
+            type="text"
+            placeholder="e.g A sustainable clothing brand for outdoor adventures who care about the planet..."
+            required
+            autofocus
+            autocomplete="off"
+            class="input-text"
+          />
+          <input
+            type="submit"
+            value="✨ Generate brand name and tagline"
+            class="submit-button"
+          />
+          <p class="form-brand-explanation"></p>
+        </form>
+        <div class="brand">
+          <div class="brand-name">Brand Name</div>
+          <div class="brand-tagline">Tagline</div>
+        </div>
+      </main>
+      <footer>
+        · Names and taglines are suggestions ONLY · Powered by AI SheCodes
         <br />
-        Tagline
-      </div>
-    </main>
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/littleacls" target="_blank">Ana Lucianetti</a>
-      and is
-      <a
-        href="https://github.com/littleacls/ai-brand-tagline-generator"
-        target="_blank"
-        >open-sourced on GitHub</a
-      >
-      and hosted on
-      <a href="https://aibrandgenerator.vercel.app/" target="_blank">Vercel</a>
-    </footer>
+        This AI project was coded by
+        <a href="https://github.com/littleacls" target="_blank"
+          >Ana Lucianetti</a
+        >
+        and is
+        <a
+          href="https://github.com/littleacls/ai-brand-tagline-generator"
+          target="_blank"
+          >open-sourced on GitHub</a
+        >
+        and hosted on
+        <a href="https://aibrandgenerator.vercel.app/" target="_blank"
+          >Vercel</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
