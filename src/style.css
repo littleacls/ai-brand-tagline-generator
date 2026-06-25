@@ -5,7 +5,7 @@ body {
 
 .container {
   max-width: 900px;
-  margin: 60px auto;
+  margin: 40px auto;
 }
 
 form {
@@ -76,7 +76,6 @@ a {
   display: block;
   margin: 10px 0;
   padding: 0 14px;
-  field-sizing: content;
 }
 
 .form-description {
@@ -88,7 +87,7 @@ a {
 
 .submit-button {
   display: block;
-  margin: 25px auto 15px auto;
+  margin: 25px auto;
   background: #0ea5a0;
   font-size: 16px;
   color: white;
@@ -98,17 +97,36 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.07);
 }
 
+.submit-button:hover {
+  cursor: pointer;
+}
+
 .form-brand-explanation {
   color: #1e3c3c;
   text-align: center;
 }
 
+.hidden {
+  display: none;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation: blink 1.3s step-start 0s infinite;
+}
+
 .brand {
   background: linear-gradient(145deg, rgb(13, 30, 30) 0%, rgb(9, 24, 24) 100%);
+  color: #8abcbd;
   border: 1px solid rgba(255, 255, 255, 0.07);
   border-radius: 20px;
   opacity: 1;
-  padding: 15px 30px;
+  padding: 10px 30px;
   margin-bottom: 30px;
 }
 
