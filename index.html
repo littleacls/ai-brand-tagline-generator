@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Brand Name & Tagline Generator</title>
   </head>
   <body>
@@ -26,12 +27,13 @@
         </h6>
       </header>
       <main>
-        <form>
+        <form id="brand-name-form">
           <div class="form-description">Describe your business</div>
           <input
             type="text"
             placeholder="e.g A sustainable clothing brand for outdoor adventures who care about the planet..."
             required
+            autofocus
             autocomplete="off"
             class="input-text"
           />
@@ -42,9 +44,9 @@
           />
           <p class="form-brand-explanation"></p>
         </form>
-        <div class="brand">
-          <div class="brand-name">Brand Name</div>
-          <div class="brand-tagline">Tagline</div>
+        <div class="brand" id="brand-name-result">
+          <div class="brand-name"></div>
+          <div class="brand-tagline"></div>
         </div>
       </main>
       <footer>
