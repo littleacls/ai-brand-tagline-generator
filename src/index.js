@@ -30,8 +30,6 @@ Aim for names that are short (1-3 words), easy to spell, and sound like they cou
   brandElement.classList.remove("hidden");
   brandElement.innerHTML = `<div class="blink">⏳ Generating a name for ${userInstructions.value}</div>`;
 
-  console.log(`Context: ${context}`);
-
   axios.get(apiUrl).then(displayBrandName);
 }
 
